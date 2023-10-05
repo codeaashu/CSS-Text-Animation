@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+/* Credit - youtube.com/@ashutoshpython */
+
+:root{
+  --normal: hsla(0, 0%, 0%, .9);
+  --Sky-Color: rgb(0, 149, 255);
+  --Pink-Color: rgb(255, 0, 123);
+}
+
+body {
+  background: var(--normal); 
+}
+
+h1 {
+  color: var(--normal);
+  font: normal 140px Varela Round, sans-serif;
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  margin: -80px 0 0 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  width: 100%;
+  animation: move linear 2000ms infinite;  
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 var(--Sky-Color), 
+      3px -3px 0 var(--Sky-Color), 
+      2px -2px 0 var(--Sky-Color), 
+      1px -1px 0 var(--Sky-Color),
+      -4px 4px 0 var(--Pink-Color), 
+      -3px 3px 0 var(--Pink-Color), 
+      -2px 2px 0 var(--Pink-Color), 
+      -1px 1px 0 var(--Pink-Color)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 var(--Pink-Color), 
+      -3px -3px 0 var(--Pink-Color), 
+      -2px -2px 0 var(--Pink-Color), 
+      -1px -1px 0 var(--Pink-Color),
+      4px 4px 0 var(--Sky-Color), 
+      3px 3px 0 var(--Sky-Color), 
+      2px 2px 0 var(--Sky-Color), 
+      1px 1px 0 var(--Sky-Color)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 var(--Sky-Color), 
+      -3px 3px 0 var(--Sky-Color), 
+      -2px 2px 0 var(--Sky-Color), 
+      -1px 1px 0 var(--Sky-Color),
+      4px -4px 0 var(--Pink-Color), 
+      3px -3px 0 var(--Pink-Color), 
+      2px -2px 0 var(--Pink-Color), 
+      1px -1px 0 var(--Pink-Color)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 var(--Pink-Color), 
+      3px 3px 0 var(--Pink-Color), 
+      2px 2px 0 var(--Pink-Color), 
+      1px 1px 0 var(--Pink-Color),
+      -4px -4px 0 var(--Sky-Color), 
+      -3px -3px 0 var(--Sky-Color), 
+      -2px -2px 0 var(--Sky-Color), 
+      -1px -1px 0 var(--Sky-Color)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 var(--Sky-Color), 
+      3px -3px 0 var(--Sky-Color), 
+      2px -2px 0 var(--Sky-Color), 
+      1px -1px 0 var(--Sky-Color),
+      -4px 4px 0 var(--Pink-Color), 
+      -3px 3px 0 var(--Pink-Color), 
+      -2px 2px 0 var(--Pink-Color), 
+      -1px 1px 0 var(--Pink-Color)
+    ;
+  }  
+}
+
+
+
+
